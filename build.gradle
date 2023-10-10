@@ -39,7 +39,7 @@ dependencies {
   if (dtlibJar.getSingleFile().exists()) {
     implementation dtlibJar
   } else {
-    implementation 'org.victorrobotics.dtlib:dtlib-java:0.1'
+    // implementation 'org.victorrobotics.dtlib:dtlib-java:0.1'
   }
 
   roborioDebug wpi.java.deps.wpilibJniDebug(wpi.platforms.roborio)
