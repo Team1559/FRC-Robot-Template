@@ -11,13 +11,13 @@
   "files.eol": "\n",
   "files.exclude": {
     ".classpath": true,
+    ".gradle": true,
     ".project": true,
     ".settings": true,
-    "build": true,
-    "gradle/": true,
-    ".gradle": true,
     ".wpilib": true,
-    "buildSrc": true,
+    "bin": true,
+    "build": true,
+    "gradle": true,
     "gradlew": true,
     "gradlew.bat": true
   },
@@ -32,9 +32,12 @@
   "java.completion.importOrder": [
     "#",
     "frc.robot",
-    "org.victorrobotics.dtlib",
+    "org.victorrobotics",
     "java",
-    "edu.wpi.first"
+    "edu.wpi.first",
+    "",
+    "#org.junit.jupiter",
+    "org.junit.jupiter"
   ],
   "java.configuration.updateBuildConfiguration": "automatic",
   "java.format.settings.url": "java-formatter.xml",
