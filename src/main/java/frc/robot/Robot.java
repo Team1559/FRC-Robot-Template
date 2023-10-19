@@ -1,8 +1,8 @@
 package frc.robot;
 
 import org.victorrobotics.dtlib.DTRobot;
-import org.victorrobotics.dtlib.command.DTCommand;
-import org.victorrobotics.dtlib.command.DTNullCommand;
+import org.victorrobotics.dtlib.command.Command;
+import org.victorrobotics.dtlib.command.NullCommand;
 
 public final class Robot extends DTRobot {
   public Robot() {}
@@ -20,12 +20,12 @@ public final class Robot extends DTRobot {
   protected void periodic() {}
 
   @Override
-  protected DTCommand getAutoCommand() {
-    return new DTNullCommand();
+  protected Command getAutoCommand() {
+    return new NullCommand();
   }
 
   @Override
-  protected DTCommand getSelfTestCommand() {
-    return new DTNullCommand();
+  protected Command getSelfTestCommand() {
+    return new NullCommand();
   }
 }
